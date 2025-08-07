@@ -28,7 +28,7 @@ Ensure you have the following installed on your system:
 
    ```bash
    git clone https://github.com/sohnemann/Electron-Sveltekit-5.git
-   cd electron-sveltekit-template
+   cd Electron-Sveltekit-5
    ```
 
 2. Install dependencies using Bun:
