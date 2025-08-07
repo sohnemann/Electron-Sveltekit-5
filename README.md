@@ -31,7 +31,12 @@ Ensure you have the following installed on your system:
    cd Electron-Sveltekit-5
    ```
 
-2. Install dependencies using Bun:
+2. Install Bun
+   ```bash
+   npm install -g bun
+   ```
+
+3. Install dependencies using Bun:
 
    ```bash
    bun install
