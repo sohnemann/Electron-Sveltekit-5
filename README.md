@@ -27,7 +27,7 @@ Ensure you have the following installed on your system:
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/your-username/electron-sveltekit-template.git
+   git clone https://github.com/sohnemann/electron-sveltekit-template.git
    cd electron-sveltekit-template
    ```
 
