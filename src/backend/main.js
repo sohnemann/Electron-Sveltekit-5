@@ -16,7 +16,7 @@ const createWindow = () => {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
-    title: 'Hello, World!!',
+    title: 'Registration',
     webPreferences: {
       contextIsolation: true,
       nodeIntegration: false,

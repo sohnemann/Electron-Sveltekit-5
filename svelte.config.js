@@ -1,15 +1,18 @@
+import adapter from '@sveltejs/adapter-node';
+import adapterStatic from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
-import adapter from '@sveltejs/adapter-static';
+
+const useStatic = process.env.ADAPTER === 'static';
+
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-  kit: {
-    adapter: adapter({
-      fallback: 'index.html',
-    }),
-    prerender: { entries: [] },
-  },
+	preprocess: vitePreprocess(),
 
-  preprocess: vitePreprocess(),
+	kit: {
+		adapter: useStatic
+			? adapterStatic({ strict: false })  // 👈 allow non-prerenderable routes
+			: adapter()
+	}
 };
 
 export default config;

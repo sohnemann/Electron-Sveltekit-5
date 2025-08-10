@@ -1,6 +1,6 @@
 {
-    "appId": "com.your.app",
-    "productName": "electron-sveltekit-template",
+    "appId": "com.chl.registration",
+    "productName": "Registration",
     "directories": {
       "output": "dist"
     },
